@@ -1,0 +1,37 @@
+services:
+  raceday-api:
+    build:
+      context: .
+      dockerfile: RaceDay.Api/Dockerfile
+    container_name: raceday-api
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__Default: Data Source=/data/raceday.db
+      Jwt__Key: "RaceDay-dev-signing-key-please-change-0123456789"
+      Jwt__Issuer: RaceDay.Api
+      Jwt__Audience: RaceDay.Client
+      # Set these to enable Azure Blob Storage (or leave empty for local disk):
+      AzureBlob__ConnectionString: ""
+      AzureBlob__Container: "raceday-uploads"
+    volumes:
+      - raceday-data:/data
+
+  raceday-web:
+    build:
+      context: .
+      dockerfile: RaceDay.Web/Dockerfile
+    container_name: raceday-web
+    ports:
+      - "5001:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:8080
+      RaceDayApi__BaseUrl: http://raceday-api:8080
+    depends_on:
+      - raceday-api
+
+volumes:
+  raceday-data:
