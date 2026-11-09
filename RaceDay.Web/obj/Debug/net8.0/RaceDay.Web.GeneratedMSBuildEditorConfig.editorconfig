@@ -12,61 +12,61 @@ build_property.EntryPointFilePath =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RaceDay.Web
 build_property.RootNamespace = RaceDay.Web
-build_property.ProjectDir = C:\Users\lwand\OneDrive\Desktop\RaceDay-solution\RaceDay.Web\
+build_property.ProjectDir = C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\lwand\OneDrive\Desktop\RaceDay-solution\RaceDay.Web
+build_property.MSBuildProjectDirectory = C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Web
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Account/Login.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Account/Profile.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Account/Register.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Events/Create.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Events/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Events/Details.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Events/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Events/Enrolments.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Events/Enrolments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEVucm9sbWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Events/Entrants.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Events/Entrants.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEVudHJhbnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Events/Index.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Events/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Events/Results.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Events/Results.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXFJlc3VsdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/Shared/_Layout.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/_ViewImports.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/lwand/OneDrive/Desktop/RaceDay-solution/RaceDay.Web/Views/_ViewStart.cshtml]
+[C:/Users/lwand/OneDrive/Desktop/RaceDay/RaceDay.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

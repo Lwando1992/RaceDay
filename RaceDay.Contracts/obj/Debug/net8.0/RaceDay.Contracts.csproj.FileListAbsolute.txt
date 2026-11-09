@@ -9,3 +9,15 @@ C:\Users\lwand\OneDrive\Desktop\RaceDay-solution\RaceDay.Contracts\obj\Debug\net
 C:\Users\lwand\OneDrive\Desktop\RaceDay-solution\RaceDay.Contracts\obj\Debug\net8.0\refint\RaceDay.Contracts.dll
 C:\Users\lwand\OneDrive\Desktop\RaceDay-solution\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.pdb
 C:\Users\lwand\OneDrive\Desktop\RaceDay-solution\RaceDay.Contracts\obj\Debug\net8.0\ref\RaceDay.Contracts.dll
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\bin\Debug\net8.0\RaceDay.Contracts.deps.json
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\bin\Debug\net8.0\RaceDay.Contracts.dll
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\bin\Debug\net8.0\RaceDay.Contracts.pdb
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.AssemblyInfoInputs.cache
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.AssemblyInfo.cs
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.sourcelink.json
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.dll
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\refint\RaceDay.Contracts.dll
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\RaceDay.Contracts.pdb
+C:\Users\lwand\OneDrive\Desktop\RaceDay\RaceDay.Contracts\obj\Debug\net8.0\ref\RaceDay.Contracts.dll

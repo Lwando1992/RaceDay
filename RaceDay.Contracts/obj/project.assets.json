@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lwand\\OneDrive\\Desktop\\RaceDay-solution\\RaceDay.Contracts\\RaceDay.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\lwand\\OneDrive\\Desktop\\RaceDay\\RaceDay.Contracts\\RaceDay.Contracts.csproj",
       "projectName": "RaceDay.Contracts",
-      "projectPath": "C:\\Users\\lwand\\OneDrive\\Desktop\\RaceDay-solution\\RaceDay.Contracts\\RaceDay.Contracts.csproj",
+      "projectPath": "C:\\Users\\lwand\\OneDrive\\Desktop\\RaceDay\\RaceDay.Contracts\\RaceDay.Contracts.csproj",
       "packagesPath": "C:\\Users\\lwand\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lwand\\OneDrive\\Desktop\\RaceDay-solution\\RaceDay.Contracts\\obj\\",
+      "outputPath": "C:\\Users\\lwand\\OneDrive\\Desktop\\RaceDay\\RaceDay.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
