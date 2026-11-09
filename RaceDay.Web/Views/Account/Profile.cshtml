@@ -1,0 +1,55 @@
+@model RaceDay.Contracts.DTOs.UserDto
+@{
+    ViewData["Title"] = "My profile";
+    var enrolments = (List<RaceDay.Contracts.DTOs.EnrolmentDto>)ViewData["Enrolments"]!;
+    var results = (List<RaceDay.Contracts.DTOs.ResultDto>)ViewData["Results"]!;
+}
+
+<h2>My profile</h2>
+<div class="card p-4 mb-4">
+    <div class="d-flex align-items-center gap-3">
+        @if (!string.IsNullOrEmpty(Model.ImageUrl))
+        {
+            <img src="@Model.ImageUrl" alt="profile" class="rounded-circle" width="64" height="64" />
+        }
+        <div>
+            <h4 class="mb-0">@Model.FullName</h4>
+            <span class="text-muted">@Model.Email &middot; <span class="badge bg-secondary">@Model.Role</span></span>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h5>Enrolments (@enrolments.Count)</h5>
+        <ul class="list-group mb-3">
+            @foreach (var e in enrolments)
+            {
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>@e.EventName</span>
+                    <span class="text-muted">@e.CategoryName</span>
+                </li>
+            }
+            @if (enrolments.Count == 0)
+            {
+                <li class="list-group-item text-muted">No enrolments yet.</li>
+            }
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h5>Results (@results.Count)</h5>
+        <ul class="list-group">
+            @foreach (var r in results)
+            {
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>@r.EventName</span>
+                    <span>Position @r.Position &middot; @TimeSpan.FromSeconds(r.FinishTimeSeconds)</span>
+                </li>
+            }
+            @if (results.Count == 0)
+            {
+                <li class="list-group-item text-muted">No results yet.</li>
+            }
+        </ul>
+    </div>
+</div>

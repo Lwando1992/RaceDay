@@ -1,0 +1,23 @@
+@model List<RaceDay.Contracts.DTOs.EnrolmentDto>
+@{ ViewData["Title"] = "My enrolments"; }
+
+<h2>My enrolments</h2>
+<table class="table bg-white">
+    <thead>
+        <tr><th>Event</th><th>Category</th><th>Enrolled at</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.EventName</td>
+                <td>@e.CategoryName</td>
+                <td class="text-muted">@e.EnrolledAtUtc.ToLocalTime().ToString("g")</td>
+            </tr>
+        }
+        @if (Model.Count == 0)
+        {
+            <tr><td colspan="3" class="text-muted">You are not enrolled in any events.</td></tr>
+        }
+    </tbody>
+</table>

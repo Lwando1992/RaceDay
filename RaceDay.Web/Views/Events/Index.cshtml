@@ -1,0 +1,31 @@
+@model List<RaceDay.Contracts.DTOs.EventDto>
+@{ ViewData["Title"] = "Events"; }
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Upcoming events</h2>
+    @if ((bool)(ViewBag.IsOrganiser ?? false))
+    {
+        <a class="btn btn-primary" asp-action="Create">+ New event</a>
+    }
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-3">
+    @foreach (var e in Model)
+    {
+        <div class="col">
+            <div class="card h-100 p-3">
+                <h5 class="mb-1">@e.Name</h5>
+                <div class="text-muted mb-2">@e.Date.ToString("dd MMM yyyy") &middot; @e.Location</div>
+                <p class="flex-grow-1">@e.Description</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="badge bg-info text-dark">@e.Categories.Count categories</span>
+                    <a class="btn btn-sm btn-outline-primary" asp-action="Details" asp-route-id="@e.Id">View</a>
+                </div>
+            </div>
+        </div>
+    }
+    @if (Model.Count == 0)
+    {
+        <p class="text-muted">No events yet.</p>
+    }
+</div>

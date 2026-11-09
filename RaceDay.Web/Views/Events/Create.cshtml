@@ -1,0 +1,33 @@
+@model RaceDay.Web.Models.EventFormViewModel
+@{ ViewData["Title"] = "New event"; }
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h3 class="mb-3">Create an event</h3>
+            <form asp-action="Create" method="post">
+                <div asp-validation-summary="All" class="text-danger mb-2"></div>
+                <div class="mb-3">
+                    <label asp-for="Name" class="form-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label"></label>
+                    <textarea asp-for="Description" class="form-control" rows="3"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <label asp-for="Date" class="form-label"></label>
+                        <input asp-for="Date" class="form-control" type="date" />
+                    </div>
+                    <div class="col mb-3">
+                        <label asp-for="Location" class="form-label"></label>
+                        <input asp-for="Location" class="form-control" />
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Create</button>
+                <a class="btn btn-outline-secondary" asp-action="Index">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

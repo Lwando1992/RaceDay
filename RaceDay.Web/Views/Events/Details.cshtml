@@ -1,0 +1,70 @@
+@model RaceDay.Contracts.DTOs.EventDto
+@{
+    ViewData["Title"] = Model.Name;
+    var isOrganiser = (bool)(ViewBag.IsOrganiser ?? false);
+    var isAuthenticated = (bool)(ViewBag.IsAuthenticated ?? false);
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>@Model.Name</h2>
+        <p class="text-muted">@Model.Date.ToString("f") &middot; @Model.Location &middot; Organised by @Model.OrganiserName</p>
+        <p>@Model.Description</p>
+
+        <h5 class="mt-4">Categories</h5>
+        @if (isAuthenticated && !isOrganiser)
+        {
+            <form asp-action="Enrol" method="post" class="d-flex gap-2 mb-3">
+                <input type="hidden" name="id" value="@Model.Id" />
+                <select name="categoryId" class="form-select w-auto" required>
+                    <option value="" disabled selected>Choose a category...</option>
+                    @foreach (var c in Model.Categories)
+                    {
+                        <option value="@c.Id">@c.Name</option>
+                    }
+                </select>
+                <button type="submit" class="btn btn-primary">Enrol</button>
+            </form>
+        }
+
+        <table class="table">
+            <thead><tr><th>Name</th><th>Description</th></tr></thead>
+            <tbody>
+                @foreach (var c in Model.Categories)
+                {
+                    <tr><td>@c.Name</td><td class="text-muted">@c.Description</td></tr>
+                }
+            </tbody>
+        </table>
+
+        @if (isOrganiser)
+        {
+            <div class="d-flex gap-2 mt-3">
+                <a class="btn btn-outline-primary" asp-action="Entrants" asp-route-id="@Model.Id">View entrants</a>
+                <form asp-action="Delete" method="post" onsubmit="return confirm('Delete this event?');">
+                    <input type="hidden" name="id" value="@Model.Id" />
+                    <button type="submit" class="btn btn-outline-danger">Delete event</button>
+                </form>
+            </div>
+        }
+    </div>
+
+    @if (isOrganiser)
+    {
+        <div class="col-md-4">
+            <div class="card p-3">
+                <h6>Add a category</h6>
+                <form asp-action="AddCategory" method="post">
+                    <input type="hidden" name="id" value="@Model.Id" />
+                    <div class="mb-2">
+                        <input name="name" class="form-control" placeholder="Category name" required />
+                    </div>
+                    <div class="mb-2">
+                        <input name="description" class="form-control" placeholder="Description (optional)" />
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Add</button>
+                </form>
+            </div>
+        </div>
+    }
+</div>
